@@ -6,15 +6,6 @@
 #include <cstring>
 #include <esp_system.h>
 
-//---- mtlsp.h ----
-#define BYTE256b 32U
-#define BYTE512b 64U
-#define OK 0b01010101
-#define NOK 0b10101010
-
-int mtlsp_handshake(uint32_t (&master_secert)[8]);
-int handshake_error(const char *msg);
-//----------------
 
 /**
  * @brief 握手函数，为一个 TCP 链接提供一个主密钥
